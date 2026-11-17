@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: springboot-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: springboot-label
+  template:
+    metadata:
+      labels:
+        app: springboot-label
+    spec:
+      containers:
+        - name: springboot-app
+          image: chintha21/springboot-kubernetes:1.0.0
+          ports:
+            - containerPort: 8080
