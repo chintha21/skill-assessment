@@ -10,6 +10,6 @@ public class HelloController {
 
     @GetMapping("/hello")
     public String hello(){
-        return "Application is deployed in kubernetes";
+        return "Application is deployed in kubernetes men its working !!";
     }
 }
