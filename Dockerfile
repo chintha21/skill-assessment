@@ -1,5 +1,5 @@
 FROM eclipse-temurin:21-jre
 
-COPY target/springboot-kubernetes-0.0.1-SNAPSHOT.jar springboot-kubernetes.jar
+COPY target/github-action.jar github-action.jar
 
-ENTRYPOINT ["java", "-jar", "springboot-kubernetes.jar"]
+ENTRYPOINT ["java", "-jar", "github-action.jar"]
